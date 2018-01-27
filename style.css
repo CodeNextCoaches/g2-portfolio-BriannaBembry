@@ -1,0 +1,27 @@
+html {
+	box-sizing: border-box;
+}
+
+*,*;before, *;after{
+	box-sizing: inherit;
+}
+
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	display: inline;
+}
+
+span {
+	float: right;
+}
+
+.icon {
+	width: 30px;
+}
+
+
+
