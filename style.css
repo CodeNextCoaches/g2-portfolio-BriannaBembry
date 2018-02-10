@@ -1,22 +1,66 @@
-/* Navigation Bar & Icons */
-
-html {
-	box-sizing: border-box;
+/* Dropdown */
+.dropbtn {
+	background-color: lightblue;
+	color: black;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
 }
+
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px gray;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: lightgray;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: white;
+}
+
+
+/* Nav & Icons */
 
 *,*;before, *;after{
 	box-sizing: inherit;
 }
 
-
+nav {
+	display: inline;
+	font-family: 'Raleway', sans-serif;
+	color: lightblue;
+	height: 70px;
+}
 nav ul {
 	list-style: none;
 }
 
 nav ul li {
 	display: inline;
-	font-family: 'Raleway', sans-serif;
+	margin: 5px;
 }
+
+
 
 span {
 	float: right;
@@ -26,16 +70,12 @@ span {
 	width: 30px;
 }
 
-nav {
-	background-color: lightblue;
-	height: 60px;
-}
-
 /* Header */
 
 header {
 	height: 500px; 
-	background-image: url("img/ocean3.jpg")
+	background-image: url("img/ocean3.jpg");
+	background-size: cover;
 }
 
 header h1 {
@@ -50,17 +90,35 @@ header h1 {
 .emoji {
 	float: left; 
 	height: 450px;
-	width: 450x;
+	width: 450px;
+	opacity: 0.75;
+	transition: opacity 0.5s;
+}
+
+.emoji:hover {
+	opacity: 1;
 }
 
 .video {
 	padding-left: 2.5%;
+	opacity: 0.75;
+	transition: opacity 0.5s;
+}
+
+.video:hover {
+	opacity: 1;
 }
 
 .watermelon {
 	float: right;
 	width: 450px;
 	height: 450px;
+	opacity: 0.75;
+	transition: opacity 0.5s;
+}
+
+.watermelon:hover {
+	opacity: 1;
 }
 
 /* Text */
@@ -72,8 +130,10 @@ h2 {
 
 p {
 	font-family: 'Raleway', sans-serif;
-	font-size: 24px;
+	font-size: 20px;
 }
+
+
 
 
 

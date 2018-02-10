@@ -6,24 +6,30 @@
 	<link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore|Raleway" rel="stylesheet">
 </head>
 <body>
+	<!-- Navigation Bar -->
 	<nav>
-		<ul>
-			<!-- Navigation Bar -->
-			<br />
-			<li><a href = "#aboutMe">About Me</a></li>
-			<li><a href = "#Projects">Projects</a></li>
-			<li><a href = "#Contact">Contact</a></li>
-			<span>
+		<div class = "dropdown">
+			<button class = "dropbtn">Home</button>
+			<div class = "dropdown-content">
+				<a href = "#aboutMe">About Me</a>
+				<a href = "#Projects">Projects</a>
+				<a href = "#Contact">Contact</a>
+			</div>
+		</div>	
+		<span>
+			<ul>	
 				<!-- Linked Icons --> 
 				<li><a href="https://www.instagram.com/briannab37/" target="_blank"><img src = "icons/instagram.png" class="icon"></a></li>
 				<li><a href="https://github.com/BriannaBembry" target="_blank"><img src = "icons/github.png" class="icon"></a></li>
-			</span>	
-		</ul>
+			</ul>
+		</span>
 	</nav>
-	<header>
+
+	<header id = "header">
 		<center><h1>Brianna Bembry</h1></center>
 	</header>
 	<main>
+		<!-- Projects --> 
 		<center><h2 id = "Projects">Projects</h2></center>
 			<div id = "Pics">
 				<img src = "img/emoji.jpg" class = "emoji" alt = "emoji"> 
@@ -32,11 +38,16 @@
 				</video>		
 				<img src = "img/watermelon.jpg" class = "watermelon" alt = "watermelon"> 
 			</div>	
+		<!-- About Me -->	
 		<center><h2 id = "aboutMe">About Me</h2></center>
-			<p> Hello! My name is Brianna Bembry and I'm passionate about a number of things including technology, fiction novels, food, cats, volunteering, and my friends and family. Apart from coding outside of school at Google, I am currently in my school's coding club and we should be attending our first hackathon this spring! I also write for my school blog, <a href = "https://www.thechewtrain.com" target="_blank">the Chew Train </a>, that showcases a number of NYC restaurants with an accompanying review deciding whether or not they're worth the hype. The little things that I enjoy are reading a good book, playing with my cat, trying new dessert recipies and catching re-runs of <em>Friends</em> on TV. 
-			</p>
+			<center><p> Hello! My name is Brianna Bembry and I'm passionate about a number of things including technology, fiction novels, food, cats, volunteering, and my friends and family. Apart from coding outside of school at Google, I am currently in my school's coding club and we should be attending our first hackathon this spring! I also write for my school blog, <a href = "https://www.thechewtrain.com" target="_blank">the Chew Train </a>, that showcases a number of NYC restaurants with an accompanying review deciding whether or not they're worth the hype. The little things that I enjoy are reading a good book, playing with my cat, trying new dessert recipies and catching re-runs of <em>Friends</em> on TV. 
+			</p></center>
+		<!-- Contact Me --> 	
 		<center><h2 id = "Contact">Contact</h2></center>
-			<p></p>		
+			<div>
+				<center><iframe src = "https://docs.google.com/forms/d/e/1FAIpQLSfpElhqtTbiuaPJdef2I5ybZ2aUeaYX7ugeL_Q9yBh8fgTsqQ/viewform?usp=sf_link" 
+				width = "760" height = "500" frameborder="0" marginheight ="0" marginwidth = "0">Loading...</iframe></center>
+			</div>
 	</main>
 </body>
 </html>
